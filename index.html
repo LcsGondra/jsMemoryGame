@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="tabuleiro">
+    <script src="script.js"></script>
+      <header>
+        <h1>JOGO DA MEMÓRIA</h1>
+      </header>
+      <main>
+        <div id="menu">
+          <button id="jogar" class="button" type="button">COMEÇAR</button>
+          <div class="timer">00:00:000</div>
+          <button id="pontuacao" class="button" type="button" onclick="location.href='#scores';">PONTUAÇÃO</button>
+        </div>
+        <h3 id="dialogo">BEM VINDO</h3>
+        <div id="newScore">
+          <form>
+            <label for="Name">Name: </label>
+            <input id="Name" type="text" pattern="[A-Za-z0-9]{3}"  maxlength="3"  minlength="3">
+            <br>
+            <button id="btnNewScore" class="button" type="button">REGISTRAR</button>
+          </form>
+        </div>
+        <div id="jogo">
+          <ul class="cartas">
+            <li class="carta"><img id="carta1" src="img/android.png"></li>
+            <li class="carta"><img id="carta2" src="img/android.png"></li>
+            <li class="carta"><img id="carta3" src="img/chrome.png"></li>
+            <li class="carta"><img id="carta4" src="img/chrome.png"></li>
+            <li class="carta"><img id="carta5" src="img/facebook.png"></li>
+            <li class="carta"><img id="carta6" src="img/facebook.png"></li>
+            <li class="carta"><img id="carta7" src="img/firefox.png"></li>
+            <li class="carta"><img id="carta8" src="img/firefox.png"></li>
+            <li class="carta"><img id="carta9" src="img/googleplus.png"></li>
+            <li class="carta"><img id="carta10" src="img/googleplus.png"></li>
+            <li class="carta"><img id="carta11" src="img/html5.png"></li>
+            <li class="carta"><img id="carta12" src="img/html5.png"></li>
+            <li class="carta"><img id="carta13" src="img/twitter.png"></li>
+            <li class="carta"><img id="carta14" src="img/twitter.png"></li>
+            <li class="carta"><img id="carta15" src="img/windows.png"></li>
+            <li class="carta"><img id="carta16" src="img/windows.png"></li>
+          </ul>
+        </div>
+        <div id="scores">
+          <ol id="top10">
+           <h3>TOP 10</h3>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+          </ol>
+          
+          <ol id="recentes">
+            <h3>RECENTES</h3>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+            <li>--- ---</li>
+          </ol>
+        </div>
+      </main>
+  </div>
+  
+</body>
+
+</html>
